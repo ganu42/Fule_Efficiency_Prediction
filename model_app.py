@@ -153,7 +153,7 @@ with open("ridgescaler_1.pkl", "rb") as scaler_file:
 # ---------------- Input Form ----------------
 st.markdown('<div class="center-text">Enter vehicle details to predict fuel efficiency (KM/L).</div>', unsafe_allow_html=True)
 
-acceleration = st.number_input("Acceleration (0-100 mph in sec)", min_value=0, placeholder="Acceleration")
+acceleration = st.number_input("Acceleration (0-100 mph in sec)", placeholder="Acceleration")
 displacement = st.number_input("Displacement", min_value=0, placeholder="Displacement")
 weight = st.number_input("Weight", min_value=0, placeholder="Weight")
 horsepower = st.number_input("Horsepower", min_value=0, placeholder="Horsepower")
