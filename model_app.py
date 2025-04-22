@@ -163,7 +163,7 @@ cylinders = st.number_input("Cylinders", min_value=0, max_value=12, placeholder=
 if st.button("PREDICT"):
    
     # Combine all inputs including fuel type
-       input_data = np.array([[float(cylinders), float(displacement),float( weight),float (horsepower), float(acceleration)]]
+       input_data = np.array[[float(cylinders), float(displacement),float( weight),float (horsepower), float(acceleration)]]
     input_scaled = scaler.transform(input_data)
     st.session_state.mpg_prediction = ridge_model.predict(input_scaled)[0]
 
