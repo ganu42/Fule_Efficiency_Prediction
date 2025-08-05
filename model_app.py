@@ -6,7 +6,7 @@ from openai import OpenAI
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",  # Replace with your actual OpenRouter API key
+    api_key=OPENAI_API_KEY,  # Replace with your actual OpenRouter API key
 )
 
 def suggest_car_modifications(
@@ -56,7 +56,7 @@ def suggest_car_modifications(
 # Initialize OpenAI client (OpenRouter)
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",  # Replace with your OpenRouter key
+    api_key=OPENAI_API_KEY,  # Replace with your OpenRouter key
 )
 
 # Function to Get Chatbot Responses
@@ -334,3 +334,4 @@ for message in st.session_state.chat_history:
     st.write(message)
 
 chat_with_bot()
+
