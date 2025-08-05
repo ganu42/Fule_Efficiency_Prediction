@@ -4,3 +4,4 @@ numpy
 xgboost
 pandas
 plotly==6.0.0
+openai
